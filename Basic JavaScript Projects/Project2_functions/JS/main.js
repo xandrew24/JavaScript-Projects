@@ -9,3 +9,9 @@ function myFunction() {                                                     // B
     sentence += " a lot from this book!";                                   // also shown
     document.getElementById("Concatenate").innerHTML = sentence;            
   }
+
+
+  function newFunction(p1, p2) {
+    return p1 * p2;
+  }
+  document.getElementById("test").innerHTML = newFunction(5, 6);
