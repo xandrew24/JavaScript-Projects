@@ -12,7 +12,6 @@ function slice_Method() {                                                   //us
     var Sentence = "All work and no play makes Johnny a dull boy.";
     var Section = Sentence.slice(27,33);
     document.getElementById("Slice").innerHTML = Section;
-    System.out.printIn(txt.toLowerCase("johnny"));
 }
 
 function find() {                                                               //using search() to find the position blue is in
