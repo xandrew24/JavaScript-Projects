@@ -160,10 +160,10 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         x = x1,
         //this variable stores temporary y axis data we update in our animation loop.
         y = y1;
-}
 
-//this function interacts with canvas
-function animateLineDrawing() {
+
+    //this function interacts with canvas
+    function animateLineDrawing() {
     //this variable creates a loop.
     const animationLoop = requestAnimationFrame(animateLineDrawing);
     //this method clears content from the last loop iteration.
@@ -197,8 +197,8 @@ function animateLineDrawing() {
         if(x < x2) { x += 10; }
         if (y > y2) { y -= 10; }
         if (x >= x2 && y <= y2) { cancelAnimationFrame(animationLoop); }
+        }
     }
-
     //this function clears our canvas after our win line is drawn.
     function clear() {
         //this line starts our animation loop.
